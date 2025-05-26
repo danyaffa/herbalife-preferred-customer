@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
@@ -51,7 +52,8 @@ h1 {
 .card h2 {
   color: #0071e3;
 }
-.card button {
+.card button, .learn-button {
+  display: inline-block;
   background-color: #0071e3;
   color: white;
   padding: 0.75rem 1rem;
@@ -59,9 +61,13 @@ h1 {
   border-radius: 4px;
   margin-top: 1rem;
   cursor: pointer;
+  text-decoration: none;
 }
-.card button:hover {
-  background-color: #005bb5;
+.learn-button {
+  background-color: #4CAF50;
+}
+.learn-button:hover {
+  background-color: #388E3C;
 }
 .shake-download {
   background: #f4f4f4;
@@ -115,4 +121,32 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 4rem;
+}
+.footer-form {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+.footer-form form {
+  max-width: 500px;
+  margin: auto;
+}
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.footer-form button {
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.footer-form button:hover {
+  background-color: #005bb5;
 }
