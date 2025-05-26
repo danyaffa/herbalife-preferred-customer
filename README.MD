@@ -6,7 +6,8 @@ Welcome to the official landing page template for **Herbalife Preferred Customer
 
 ## What This Site Offers
 
-- **Join Herbalife as a Preferred Customer** and receive up to 42% discount on all Herbalife Nutrition products.
+- **Join Herbalife as a Preferred Customer** and receive up to 35% discount on all Herbalife Nutrition products.
+- **Join Herbalife as a Member** and receive up to 50% discount on all Herbalife Nutrition products.
 - **Start your Herbalife Business** as an Independent Distributor and earn while sharing healthy lifestyle solutions.
 - Free download: **Herbalife Shake Recipes Booklet** — 25+ delicious ways to enjoy your nutrition shakes.
 
@@ -44,11 +45,12 @@ This page is structured to appear in Google results for:
 ---
 
 ## Sponsor Information
+-**Copy my details:** You will need them when you complete the registration form
 
 - **Sponsor Name:** Jaffa Leffler  
 - **Herbalife ID:** 05458162C  
 - **Last Name (3 letters):** LEF  
-- **Answer to HMP question:** NO
+- **The answer on the form to the following question: Purchased your Herbalife Member Pack (HMP) from your sponsor question:** NO
 
 ---
 
@@ -73,4 +75,3 @@ Download PDF: [Shake Recipe Booklet](./ShakeRecipeBrochure.pdf)
 ## License
 
 This project is designed for Herbalife Independent Members and is **not affiliated with or endorsed by Herbalife Nutrition Ltd.** Please ensure compliance with Herbalife’s branding and advertising guidelines.
-
