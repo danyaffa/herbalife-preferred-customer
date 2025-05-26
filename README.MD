@@ -38,3 +38,39 @@ This page is structured to appear in Google results for:
   - Herbalife Registration redirect
   - Shake Recipe Booklet download link
 - `/styles/main.css` – Fully responsive and branded styling
+- `/images/` – Custom banners and section images
+- `ShakeRecipeBrochure.pdf` – Downloadable visual recipe guide
+
+---
+
+## Sponsor Information
+
+- **Sponsor Name:** Jaffa Leffler  
+- **Herbalife ID:** 05458162C  
+- **Last Name (3 letters):** LEF  
+- **Answer to HMP question:** NO
+
+---
+
+## Deployment
+
+This site can be hosted on:
+
+- **Vercel** (GitHub connected)
+- **Squarespace** (via file upload or custom code block)
+- **Netlify**
+- **Tiiny.host** (temporary showcase)
+
+---
+
+## Preview
+
+Live preview: _[Insert your Vercel/Squarespace URL here]_  
+Download PDF: [Shake Recipe Booklet](./ShakeRecipeBrochure.pdf)
+
+---
+
+## License
+
+This project is designed for Herbalife Independent Members and is **not affiliated with or endorsed by Herbalife Nutrition Ltd.** Please ensure compliance with Herbalife’s branding and advertising guidelines.
+
