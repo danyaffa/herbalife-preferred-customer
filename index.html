@@ -23,12 +23,14 @@
         <h2>Preferred Customer</h2>
         <p>Unlock exclusive savings on Herbalife® products – perfect for anyone who loves using the products and wants to enjoy them at a discount.</p>
         <button onclick="showForm()">Sign Up as Preferred Member</button>
+        <a class="learn-button" href="Preferred-Customer.pdf" target="_blank">Learn More</a>
       </div>
       <div class="card">
         <img src="images/woman.jpg" alt="Independent Distributor">
         <h2>Independent Distributor</h2>
         <p>Kick off your journey with the Herbalife business opportunity. Gain support, training, and income potential.</p>
         <button onclick="showForm()">Sign Up as Distributor</button>
+        <a class="learn-button" href="Herbalife-Memebrship.pdf" target="_blank">Learn More</a>
       </div>
     </div>
 
@@ -68,6 +70,15 @@
 
   <footer>
     <p>&copy; 2025 Leffler International Investments Pty Ltd</p>
+    <section class="footer-form">
+      <h3>Contact Us</h3>
+      <form action="mailto:leffleryd@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </footer>
 
   <script>
