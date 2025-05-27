@@ -1,94 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Join Herbalife | Choose Your Path</title>
-  <meta name="description" content="Sign up as a Herbalife Preferred Customer or Independent Distributor.">
-  <link rel="stylesheet" href="styles/main.css" />
-</head>
+<html lang='en'><head><meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Herbalife Landing</title><link rel='stylesheet' href='styles/main.css'>
+<script>
+function showForm(type){document.getElementById('form-section').style.display='block';
+document.getElementById('user-type').value=type;}
+function showSponsorInfo(){if(document.getElementById('user-type').value!==''){
+document.getElementById('sponsor-info').style.display='block';}}
+function toggleContact(){var c=document.getElementById('contact-form');
+c.style.display=(c.style.display==='block')?'none':'block';}
+</script></head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Herbalife Independent Member Logo" class="logo" />
-  </header>
-
-  <main>
- 
-    <h1>Choose Your Path</h1>
-    <p class="subheading">Become a Herbalife Preferred Customer or an Independent Distributor</p>
-
-    <div class="options">
-      <div class="card">
-        <img src="images/couple.jpg" alt="Preferred Customer">
-        <h2>Preferred Customer</h2>
-        <p>Unlock exclusive savings on Herbalife® products – perfect for anyone who loves using the products and wants to enjoy them at a discount.</p>
-        <button onclick="showForm()">Sign Up as Preferred Member</button>
-        <a class="learn-button" href="Preferred-Customer.pdf" target="_blank">Learn More</a>
-      </div>
-      <div class="card">
-        <img src="images/woman.jpg" alt="Independent Distributor">
-        <h2>Independent Distributor</h2>
-        <p>Kick off your journey with the Herbalife business opportunity. Gain support, training, and income potential.</p>
-        <button onclick="showForm()">Sign Up as Distributor</button>
-        <a class="learn-button" href="Herbalife-Membership.pdf" target="_blank">Learn More</a>
-      </div>
-    </div>
-
-    <section class="shake-download">
-      <h3>Free Download: Herbalife Shake Recipe Booklet</h3>
-      <p>Discover 25+ delicious Herbalife shake recipes that help you stay fit and feel amazing. Includes flavors like Coconut Delight, Carrot Cake, and Red Velvet!</p>
-      <a href="ShakeRecipeBrochure.pdf" class="shake-button" target="_blank">Download Now</a>
-    </section>
-
-    <div class="form-section" id="form-section">
-      <h3>Complete Your Info</h3>
-      <form action="mailto:leffleryd@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="Full Name" placeholder="Full Name" required>
-        <input type="email" name="Email" placeholder="Email Address" required>
-        <input type="tel" name="Phone" placeholder="Phone Number" required>
-        <input type="text" name="City Country" placeholder="City & Country" required>
-        <select name="Interest" required>
-          <option value="">I'm interested in...</option>
-          <option value="Preferred Customer">Preferred Customer</option>
-          <option value="Independent Member">Independent Member</option>
-        </select>
-        <button type="submit" onclick="showInstructions()">Submit</button>
-      </form>
-
-      <div id="instructions" class="instructions">
-   <div class="notice">Copy my details - You will need them when you complete the registration form.</div>
-        <h4>Next Step: Complete Your Herbalife Registration</h4>
-        <ul>
-          <li><strong>Sponsor:</strong> Jaffa Leffler</li>
-          <li><strong>ID:</strong> 05458162C</li>
-          <li><strong>Last Name (3 letters):</strong> LEF</li>
-          <li><strong>The answer on the form to the following question:</strong><br>Purchased your Herbalife Member Pack (HMP) from your sponsor: <strong>NO</strong></li>
-        </ul>
-         <a href="https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/" target="_blank">Click here to open the official Herbalife registration page</a>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Leffler International Investments Pty Ltd</p>
-    <section class="footer-form">
-      <h3>Contact Us</h3>
-      <form action="mailto:leffleryd@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </footer>
-
-  <script>
-    function showForm() {
-      document.getElementById("form-section").style.display = "block";
-    }
-    function showInstructions() {
-      document.getElementById("instructions").style.display = "block";
-    }
-  </script>
-</body>
-</html>
+<header><img src="images/logo.png" class="logo" alt="Herbalife Logo"></header>
+<main><h1>Choose Your Path</h1>
+<p class="subtext">Become a Herbalife Preferred Customer or an Independent Distributor</p>
+<div class="card"><img src="images/couple.jpg"><h2>Preferred Customer</h2>
+<p>Enjoy exclusive savings on Herbalife® products.</p>
+<button onclick="showForm('Preferred Customer')">Sign Up as Preferred Member</button>
+<a href="Preferred-Customer.pdf" class="learn-button" download>Learn More</a></div>
+<div class="card"><img src="images/woman.jpg"><h2>Independent Distributor</h2>
+<p>Start your Herbalife business with support and training.</p>
+<button onclick="showForm('Independent Member')">Sign Up as Distributor</button>
+<a href="Herbalife-Memebrship.pdf" class="learn-button" download>Learn More</a></div>
+<section id="form-section" style="display:none;"><h3>Complete Your Info</h3>
+<form onsubmit="showSponsorInfo(); return false;">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<select id="user-type" name="Interest" required>
+<option value="">I'm interested in...</option>
+<option value="Preferred Customer">Preferred Customer</option>
+<option value="Independent Member">Independent Member</option>
+</select><button type="submit">Submit</button></form></section>
+<section id="sponsor-info" style="display:none;" class="instructions">
+<h4>Copy my details – You will need them when you complete the registration form</h4>
+<ul><li><strong>Sponsor:</strong> Jaffa Leffler</li>
+<li><strong>ID:</strong> 05458162C</li>
+<li><strong>Last Name (3 letters):</strong> LEF</li>
+<li><strong>Purchased HMP from sponsor:</strong> NO</li></ul>
+<a href="https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/" target="_blank">
+Click here to open the official Herbalife registration page</a></section></main>
+<footer><p>&copy; 2025 Leffler International Investments Pty Ltd</p>
+<button onclick="toggleContact()">Contact Us</button>
+<div id="contact-form" style="display:none;">
+<form action="mailto:leffleryd@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send</button></form></div></footer></body></html>
