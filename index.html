@@ -1,23 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Herbalife Landing</title><link rel="stylesheet" href="styles/main.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Herbalife Landing</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
 <body>
-<header><img src="images/logo.png" class="logo" alt="Herbalife Independent Member Logo"></header>
-<main><h1>Choose Your Path</h1>
-<div class="card"><img src="images/couple.jpg"><h2>Preferred Customer</h2><p>Discount up to 35%</p>
-<a href="Preferred-Customer.pdf" class="learn-button" target="_blank">Learn More</a></div>
-<div class="card"><img src="images/woman.jpg"><h2>Independent Distributor</h2><p>Business opportunity</p>
-<a href="Herbalife-Memebrship.pdf" class="learn-button" target="_blank">Learn More</a></div>
-<section class="shake-download"><h3>Free Herbalife Shake Recipes</h3>
-<a href="ShakeRecipeBrochure.pdf" class="shake-button" target="_blank">Download Now</a></section>
-<section><form action="mailto:leffleryd@gmail.com" method="POST"><input name="name"><input name="email">
-<select><option>Preferred Customer</option><option>Independent Member</option></select><button type="submit">Submit</button></form>
-<div class="instructions"><p><strong>Copy my details - You will need them when you complete the registration form<br>
-<strong>Sponsor:</strong> Jaffa Leffler<br><strong>ID:</strong> 05458162C<br>
-<strong>Last Name:</strong> LEF<br><strong>HMP:</strong> NO</p>
-<a href="https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/" target="_blank">Click here to register</a></div></section>
-</main>
-<footer><p>&copy; 2025 Leffler International Investments Pty Ltd</p><button onclick="document.getElementById('contact').style.display='block'">Contact Us</button>
-<div id="contact" style="display:none;"><form action="mailto:leffleryd@gmail.com" method="POST"><input name="name"><input name="email"><textarea name="message"></textarea><button type="submit">Send</button></form></div>
-</footer></body></html>
+  <header><img src="images/logo.png" class="logo" alt="Logo"></header>
+  <main>
+    <h1>Choose Your Path</h1>
+    <div class="card">
+      <img src="images/couple.jpg" alt="Preferred Customer">
+      <h2>Preferred Customer</h2>
+      <p>Enjoy exclusive savings on Herbalife® products – perfect for those who want results with delicious shakes.</p>
+      <a href="Preferred-Customer.pdf" download class="learn-button">Learn More</a>
+    </div>
+    <div class="card">
+      <img src="images/woman.jpg" alt="Independent Distributor">
+      <h2>Independent Distributor</h2>
+      <p>Kickstart your business and inspire wellness with full Herbalife support and training.</p>
+      <a href="Herbalife-Memebrship.pdf" download class="learn-button">Learn More</a>
+    </div>
+
+    <section class="form">
+      <h3>Complete Your Info</h3>
+      <form action="mailto:leffleryd@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="instructions">
+      <h4>Copy my details – You will need them when you complete the registration form</h4>
+      <ul>
+        <li><strong>Sponsor:</strong> Jaffa Leffler</li>
+        <li><strong>ID:</strong> 05458162C</li>
+        <li><strong>Last Name (3 letters):</strong> LEF</li>
+        <li><strong>Purchased HMP from sponsor:</strong> NO</li>
+      </ul>
+      <a href="https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/" target="_blank">Click here to open the official Herbalife registration page</a>
+    </section>
+  </main>
+  <footer><p>&copy; 2025 Leffler International Investments Pty Ltd</p></footer>
+</body>
+</html>
