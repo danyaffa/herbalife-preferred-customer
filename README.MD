@@ -1,77 +1,43 @@
-# Herbalife Preferred Customer & Member Landing Page
+# Herbalife Landing Page – Final Build
 
-Welcome to the official landing page template for **Herbalife Preferred Customers** and **Independent Members**, designed to convert visitors into loyal customers and team members.
+This project contains a fully working Herbalife customer signup landing page with the following features:
 
----
+## Features
 
-## What This Site Offers
+- Responsive design with Herbalife branding
+- Preferred Customer and Independent Distributor cards
+- "Sign Up" buttons that toggle an embedded PDF viewer (no download)
+- Shake Recipe Brochure section with direct download button
+- Sponsor info appears after form submission
+- Contact Us button toggles contact form
 
-- **Join Herbalife as a Preferred Customer** and receive up to 35% discount on all Herbalife Nutrition products.
-- **Join Herbalife as a Member** and receive up to 50% discount on all Herbalife Nutrition products.
-- **Start your Herbalife Business** as an Independent Distributor and earn while sharing healthy lifestyle solutions.
-- Free download: **Herbalife Shake Recipes Booklet** — 25+ delicious ways to enjoy your nutrition shakes.
+## Included PDFs
 
----
+- Preferred-Customer.pdf (embedded view)
+- Herbalife-Memebrship.pdf (embedded view)
+- ShakeRecipeBrochure.pdf (download button)
 
-## 🔍 Search Keywords (SEO Optimised)
+## SEO Keywords
 
-This page is structured to appear in Google results for:
+Herbalife sign up, Herbalife preferred customer, Herbalife distributor, Herbalife shake recipes, Herbalife join form, Herbalife USA registration, Herbalife sample menu, Herbalife membership guide, Herbalife product discount
 
-- Herbalife preferred customer USA
-- Herbalife shake recipes PDF
-- How to join Herbalife with a sponsor
-- Herbalife member registration USA
-- Herbalife weight loss shakes recipes
-- Herbalife discounts USA
-- Herbalife join now
-- Herbalife Independent Distributor
-- Free Herbalife shake guide
-- Herbalife wellness coach registration
 
----
+### Extended SEO Keywords (High Search Volume)
 
-## Page Structure
+#### Becoming a Herbalife Independent Distributor
+join Herbalife as a distributor, Herbalife business opportunity, start Herbalife from home, become Herbalife coach, earn with Herbalife, Herbalife income plan, Herbalife distributor login, Herbalife ID registration, how to sell Herbalife products, Herbalife recruitment page, top Herbalife earners, Herbalife VIP Distributor
 
-- `index.html` – Main landing page with:
-  - Introduction & Call to Action
-  - Sign-up form
-  - Sponsor and ID info
-  - Herbalife Registration redirect
-  - Shake Recipe Booklet download link
-- `/styles/main.css` – Fully responsive and branded styling
-- `/images/` – Custom banners and section images
-- `ShakeRecipeBrochure.pdf` – Downloadable visual recipe guide
+#### Becoming a Preferred Customer
+Herbalife preferred customer sign up, Herbalife product discounts, how to join Herbalife as a customer, register as Herbalife member, Herbalife membership benefits, Herbalife save 25%, buy Herbalife with discount, Herbalife customer perks, Herbalife loyalty customer, Herbalife exclusive access
 
----
+#### VIP Customers & Exclusive Programs
+Herbalife VIP customer, Herbalife premium membership, Herbalife Flex 45 customer, Herbalife subscription benefits, best way to use Herbalife products, Herbalife loyalty pricing, Herbalife automatic reorder, Herbalife app for VIP members
 
-## Sponsor Information
--**Copy my details:** You will need them when you complete the registration form
+#### Affordable / Cheapest Herbalife Products
+cheap Herbalife shake packs, lowest price Herbalife, buy Herbalife online discount, Herbalife Australia promo, Herbalife membership save money, Herbalife deals and bundles, less expensive Herbalife, Herbalife product samples, Herbalife coupons and codes, Herbalife promotions 2025
 
-- **Sponsor Name:** Jaffa Leffler  
-- **Herbalife ID:** 05458162C  
-- **Last Name (3 letters):** LEF  
-- **The answer on the form to the following question: Purchased your Herbalife Member Pack (HMP) from your sponsor question:** NO
 
----
+## Deployment Notes
 
-## Deployment
-
-This site can be hosted on:
-
-- **Vercel** (GitHub connected)
-- **Squarespace** (via file upload or custom code block)
-- **Netlify**
-- **Tiiny.host** (temporary showcase)
-
----
-
-## Preview
-
-Live preview: _[Insert your Vercel/Squarespace URL here]_  
-Download PDF: [Shake Recipe Booklet](./ShakeRecipeBrochure.pdf)
-
----
-
-## License
-
-This project is designed for Herbalife Independent Members and is **not affiliated with or endorsed by Herbalife Nutrition Ltd.** Please ensure compliance with Herbalife’s branding and advertising guidelines.
+Deploy directly to GitHub + Vercel or Squarespace.
+No build command needed. Static HTML/CSS only.
