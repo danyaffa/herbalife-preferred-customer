@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'><head><meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <title>Herbalife Landing</title><link rel='stylesheet' href='styles/main.css'>
 <script>
 function showForm(type){document.getElementById('form-section').style.display='block';
@@ -9,8 +8,7 @@ function showSponsorInfo(){if(document.getElementById('user-type').value!==''){
 document.getElementById('sponsor-info').style.display='block';}}
 function toggleContact(){var c=document.getElementById('contact-form');
 c.style.display=(c.style.display==='block')?'none':'block';}
-</script></head>
-<body>
+</script></head><body>
 <header><img src="images/logo.png" class="logo" alt="Herbalife Logo"></header>
 <main><h1>Choose Your Path</h1>
 <p class="subtext">Become a Herbalife Preferred Customer or an Independent Distributor</p>
@@ -39,7 +37,13 @@ c.style.display=(c.style.display==='block')?'none':'block';}
 <li><strong>Last Name (3 letters):</strong> LEF</li>
 <li><strong>Purchased HMP from sponsor:</strong> NO</li></ul>
 <a href="https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/" target="_blank">
-Click here to open the official Herbalife registration page</a></section></main>
+Click here to open the official Herbalife registration page</a></section>
+    <section class="shake-recipes">
+      <h3>Want Healthy Ideas?</h3>
+      <a href="ShakeRecipeBrochure.pdf" class="shake-button" download>Free Shake Recipes</a>
+    </section>
+    </main>
+    
 <footer><p>&copy; 2025 Leffler International Investments Pty Ltd</p>
 <button onclick="toggleContact()">Contact Us</button>
 <div id="contact-form" style="display:none;">
@@ -47,4 +51,5 @@ Click here to open the official Herbalife registration page</a></section></main>
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
 <textarea name="message" placeholder="Your Message" required></textarea>
-<button type="submit">Send</button></form></div></footer></body></html>
+<button type="submit">Send</button></form></div></footer>
+</body></html>
