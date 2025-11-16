@@ -43,8 +43,8 @@ main {
 
 /* NEW SMALL ROUND LOGO */
 .top-left-logo img {
-  width: 55px;
-  height: 55px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #2d1f4e;
