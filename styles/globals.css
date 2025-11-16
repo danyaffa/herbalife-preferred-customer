@@ -34,21 +34,20 @@ main {
   padding: 1.25rem 1.25rem 0;
 }
 
+/* ----------------------------- */
+/* REMOVE OLD TEXT LOGO BLOCK    */
+/* ----------------------------- */
 .header-logo-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  font-weight: 600;
-  font-size: 0.95rem;
+  display: none !important;
 }
 
-.header-logo-text-main {
-  font-size: 1.45rem;
-  letter-spacing: 0.05em;
-}
-
-.header-logo-text-sub {
-  font-size: 0.9rem;
+/* NEW SMALL ROUND LOGO */
+.top-left-logo img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2d1f4e;
 }
 
 .site-nav {
@@ -96,11 +95,11 @@ main {
   margin-top: 1.5rem;
 }
 
+/* -------------------------------- */
+/* REMOVE BIG HERO LOGO COMPLETELY  */
+/* -------------------------------- */
 .hero-logo-image {
-  width: 200px;
-  max-width: 60%;
-  display: block;
-  margin: 0 auto 0.75rem;
+  display: none !important;
 }
 
 .hero-title {
