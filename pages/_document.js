@@ -91,18 +91,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Google Search Console – replace content value with your code */}
-        <meta
-          name="google-site-verification"
-          content="PASTE_GOOGLE_VERIFICATION_CODE_HERE"
-        />
-
-        {/* Bing / Microsoft (msvalidate) – replace with your code */}
-        <meta
-          name="msvalidate.01"
-          content="PASTE_BING_MICROSOFT_CODE_HERE"
-        />
-
         {/* JSON-LD structured data for search engines and AI platforms */}
         <script
           type="application/ld+json"
