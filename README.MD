@@ -41,7 +41,7 @@ Refund guarantee – We will refund 100% of the cost of all unopened product
 Herbalife preferred customer sign up, Herbalife product discounts, how to join Herbalife as a customer, register as Herbalife member / Preferred Customer, Herbalife membership benefits, Herbalife save up to 35%, buy Herbalife with discount, Herbalife customer perks, Herbalife loyalty customer, Herbalife exclusive access
 
 #### VIP Customers & Exclusive Programs
-Herbalife VIP customer, Herbalife prepreferred customer membership, Nutriton Clubs, Fit Clubs, Herbalife subscription benefits, best way to use Herbalife products, Herbalife loyalty pricing, Herbalife automatic reorder, shope through our e-commerce shope
+Herbalife VIP customer, Herbalife prepreferred customer membership, Nutriton Clubs, Fit Clubs, Herbalife subscription benefits, best way to use Herbalife products, Herbalife loyalty pricing, Herbalife automatic reorder, shop through our e-commerce shop
 
 #### Affordable / Cheapest Herbalife Products
 cheap Herbalife shake packs, lowest price Herbalife, buy Herbalife online discount, Herbalife Australia promo, Herbalife membership save money, Herbalife deals and bundles, less expensive Herbalife, Herbalife product samples, Herbalife coupons and codes, Herbalife promotions 2025
