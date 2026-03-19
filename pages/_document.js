@@ -136,6 +136,22 @@ export default function Document() {
           "@type": "Answer",
           text: "Signing up as a Herbalife Preferred Customer is free. There is no membership fee — you simply gain access to discounted pricing on all Herbalife nutrition products."
         }
+      },
+      {
+        "@type": "Question",
+        name: "Can Herbalife protein shakes support GLP-1 injections?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Herbalife's #1 protein shakes in the world are an excellent nutritional support for people on GLP-1 injections, helping to maintain muscle mass and meet daily protein requirements while managing weight. Consult your healthcare provider for personalised advice."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Who are Jaffa and Dan Leffler?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Jaffa and Dan Leffler are Independent Herbalife Members since 1993 and Senior Executive Presidents 15K. They run NutriPreferred and are passionate about helping people achieve their health, energy, and lifestyle goals through Herbalife nutrition products and business opportunities."
+        }
       }
     ]
   };
@@ -170,6 +186,52 @@ export default function Document() {
       }
     ]
   };
+
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteUrl}/#person-jaffa`,
+    name: "Jaffa Leffler",
+    jobTitle: "Senior Executive President 15K, Independent Herbalife Member",
+    worksFor: {
+      "@id": `${siteUrl}/#organization`
+    },
+    url: siteUrl,
+    knowsAbout: [
+      "Herbalife Nutrition",
+      "Wellness Coaching",
+      "Weight Management",
+      "Protein Shakes",
+      "GLP-1 Nutrition Support",
+      "Home-Based Business"
+    ],
+    description: "Jaffa Leffler is an Independent Herbalife Member since 1993, Senior Executive President 15K, helping people achieve their health and wellness goals through Herbalife nutrition products."
+  };
+
+  const videoJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "How to Become a Herbalife Preferred Customer",
+      description: "Learn about the benefits of becoming a Herbalife Preferred Customer and how to save up to 25% on nutrition products.",
+      thumbnailUrl: logoUrl,
+      uploadDate: "2025-01-01",
+      contentUrl: "https://youtu.be/d_mjG_QdK9I",
+      embedUrl: "https://www.youtube.com/embed/d_mjG_QdK9I",
+      publisher: { "@id": `${siteUrl}/#organization` }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "How to Become an Independent Herbalife Distributor",
+      description: "Discover the Herbalife business opportunity and how to build a wellness business from home with full training and mentorship.",
+      thumbnailUrl: logoUrl,
+      uploadDate: "2025-01-01",
+      contentUrl: "https://youtu.be/tAu3O8fkOIo",
+      embedUrl: "https://www.youtube.com/embed/tAu3O8fkOIo",
+      publisher: { "@id": `${siteUrl}/#organization` }
+    }
+  ];
 
   const howToJsonLd = {
     "@context": "https://schema.org",
@@ -207,6 +269,14 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* Web App Manifest */}
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* Preconnect for performance */}
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="https://www.youtube.com" />
+
         {/* JSON-LD structured data for search engines, AI platforms, and social media */}
         <script
           type="application/ld+json"
@@ -232,6 +302,17 @@ export default function Document() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        {videoJsonLd.map((video, i) => (
+          <script
+            key={`video-${i}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(video) }}
+          />
+        ))}
       </Head>
       <body>
         <Main />
