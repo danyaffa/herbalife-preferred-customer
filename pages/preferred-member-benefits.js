@@ -93,7 +93,7 @@ export default function PreferredMemberBenefitsPage() {
           <nav className="site-nav" aria-label="Main navigation">
             <a href="/">Home</a>
             <a
-              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
+              href="https://www.loseweighttoday.com.au/blog"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -191,13 +191,13 @@ export default function PreferredMemberBenefitsPage() {
               personalised nutrition coaching, wellness education, and community support.
             </p>
             <a
-              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
+              href="https://www.loseweighttoday.com.au/blog"
               target="_blank"
               rel="noopener noreferrer"
               className="meet-team-btn"
-              aria-label="Watch our wellness educators team on YouTube"
+              aria-label="Read our wellness blog"
             >
-              Meet Our Educators Team
+              Visit Our Blog
             </a>
           </section>
 
