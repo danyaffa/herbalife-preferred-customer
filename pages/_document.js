@@ -21,7 +21,7 @@ export default function Document() {
     },
     image: logoUrl,
     sameAs: [
-      "https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
+      "https://www.loseweighttoday.com.au/blog"
     ],
     description:
       "Herbalife Independent Member – Jaffa & Dan Leffler, offering Herbalife preferred customer discounts and distributor opportunities with personalised wellness support.",
