@@ -211,8 +211,8 @@ export default function HomePage() {
                   Watch Video
                 </a>
 
-                <a href="/ShakeRecipeBrochure.pdf" className="button-outline" download aria-label="Download free shake recipes PDF">
-                  Download Free Shake Recipes
+                <a href="/recipes" className="button-outline" aria-label="Browse free shake recipes">
+                  Free Shake Recipes
                 </a>
               </div>
             </div>
@@ -298,11 +298,11 @@ export default function HomePage() {
           </section>
 
           {/* SHAKE RECIPES CTA */}
-          <section className="section recipes-cta" aria-label="Free shake recipes">
+          <section className="section recipes-cta" aria-label="Shake recipes">
             <p>Want Healthy Ideas?</p>
-            <p>Download our free shake recipe guide — delicious, nutritious, and easy to make.</p>
-            <a href="/ShakeRecipeBrochure.pdf" className="shake-button" download aria-label="Download free shake recipe brochure">
-              Free Shake Recipes
+            <p>Browse our collection of delicious, nutritious shake recipes — easy to make and packed with protein.</p>
+            <a href="/recipes" className="shake-button" aria-label="View our shake recipes">
+              View Recipes
             </a>
           </section>
         </main>
