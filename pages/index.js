@@ -2,9 +2,6 @@
 import Head from "next/head";
 
 export default function HomePage() {
-  const herbalifeRegistrationUrl =
-    "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/";
-
   const siteUrl = "https://www.nutripreferred.com";
   const siteName = "NutriPreferred – Herbalife with Jaffa & Dan";
   const siteTitle = "Herbalife Preferred Customer & Independent Distributor | NutriPreferred";
@@ -99,7 +96,7 @@ export default function HomePage() {
             </a>
             <a href="/preferred-member-benefits">Benefits</a>
             <a href="#who-we-are">About</a>
-            <a href="#footer">Contact</a>
+            <a href="/contact">Contact</a>
           </nav>
         </header>
 
@@ -143,11 +140,11 @@ export default function HomePage() {
                 Want more? Preferred Customers can upgrade to Distributor status anytime to start earning.
               </p>
               <a
-                href="/instructions"
+                href="/contact?type=preferred"
                 className="urgency-cta"
-                aria-label="Start saving now as a Preferred Customer — step-by-step instructions"
+                aria-label="Register to become a Preferred Customer"
               >
-                Start Saving Now — Sign Up Free
+                Register Now — It&apos;s Free
               </a>
             </div>
           </section>
@@ -196,11 +193,11 @@ export default function HomePage() {
 
               <div className="button-row">
                 <a
-                  href="/instructions"
+                  href="/contact?type=preferred"
                   className="button"
-                  aria-label="Sign up as a Herbalife Preferred Customer — step-by-step instructions"
+                  aria-label="Register to become a Herbalife Preferred Customer"
                 >
-                  Sign Up as Preferred Customer
+                  Register to Become a Preferred Customer
                 </a>
 
                 <a
@@ -244,13 +241,11 @@ export default function HomePage() {
 
               <div className="button-row">
                 <a
-                  href={herbalifeRegistrationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/contact?type=member"
                   className="button"
-                  aria-label="Sign up as an Independent Herbalife Distributor"
+                  aria-label="Register to become an Independent Herbalife Distributor"
                 >
-                  Sign Up as Independent Distributor
+                  Register to Become a Member
                 </a>
 
                 <a
@@ -263,21 +258,6 @@ export default function HomePage() {
                   Watch Video
                 </a>
               </div>
-            </div>
-          </section>
-
-          {/* HOW IT WORKS */}
-          <section className="section" aria-label="How it works">
-            <div className="how-it-works">
-              <h3>How It Works</h3>
-              <ol>
-                <li>Choose your path — Preferred Customer or Independent Distributor.</li>
-                <li>Click <strong>Sign Up</strong> to open the official Herbalife registration form.</li>
-                <li>
-                  Enter your sponsor details: <strong>Jaffa Leffler</strong> — ID <strong>05458162C</strong> — <strong>LEF</strong> — HMP Purchased: <strong>NO</strong>.
-                </li>
-                <li>Send us a quick email after registration so we can welcome you and get started!</li>
-              </ol>
             </div>
           </section>
 
@@ -310,6 +290,10 @@ export default function HomePage() {
         <footer id="footer" aria-label="Contact and legal">
           <p>
             Contact us:{" "}
+            <a href="/contact" aria-label="Contact Jaffa and Dan Leffler">
+              Get in Touch
+            </a>
+            {" "}|{" "}
             <a href="mailto:leffleryd@gmail.com" aria-label="Email Jaffa and Dan Leffler">
               leffleryd@gmail.com
             </a>
