@@ -476,6 +476,52 @@ main {
   margin-top: 0.25rem;
 }
 
+/* ---- Meet Our Team ---- */
+.meet-team-section {
+  margin-top: 3.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1a3a2a 0%, #1a6b4a 50%, #238c62 100%);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  color: #ffffff;
+}
+
+.meet-team-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.meet-team-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 1.75rem;
+}
+
+.meet-team-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--color-primary-dark);
+  padding: 1rem 2.5rem;
+  border-radius: var(--radius-pill);
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border: none;
+}
+
+.meet-team-btn:hover {
+  background: #f0f0ed;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+}
+
 /* ---- Who We Are ---- */
 .who-section {
   margin-top: 3.5rem;
@@ -1288,6 +1334,14 @@ footer p:last-child {
 
   .trust-banner {
     gap: 1.5rem;
+  }
+
+  .meet-team-section {
+    padding: 2rem 1.25rem;
+  }
+
+  .meet-team-title {
+    font-size: 1.35rem;
   }
 
   .urgency-inner {
