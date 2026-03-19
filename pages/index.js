@@ -308,47 +308,12 @@ export default function HomePage() {
         </main>
 
         {/* FOOTER */}
-        <footer className="site-footer" id="footer" aria-label="Contact and legal">
-          <div className="footer-inner">
-            <div className="footer-col footer-brand">
-              <img src="/images/logo.png" alt="NutriPreferred" width="140" height="70" />
-              <p>Independent Herbalife Nutrition Distributors since 1993.</p>
-              <address className="footer-brand-address">
-                23 Salisbury St, Caulfield North<br />
-                Melbourne, VIC 3161
-              </address>
-            </div>
-
-            <div className="footer-col">
-              <h3>Contact</h3>
-              <ul>
-                <li><a href="/contact">Contact Us</a></li>
-                <li><a href="mailto:leffleryd@gmail.com">leffleryd@gmail.com</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-col">
-              <h3>Quick Links</h3>
-              <ul>
-                <li><a href="/preferred-member-benefits">Benefits</a></li>
-                <li><a href="/recipes">Recipes</a></li>
-                <li><a href="https://www.loseweighttoday.com.au/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-col">
-              <h3>Social</h3>
-              <ul>
-                <li><a href="https://www.facebook.com/loseweighttodayau" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li>Telegram — @YaffaDan</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <p>We have been serving our customers since 1993 — Senior Executive Presidents 15K</p>
-            <p>&copy; {new Date().getFullYear()} Leffler International Investments Pty Ltd — Jaffa &amp; Dan Leffler — Independent Herbalife Nutrition Distributors</p>
-          </div>
+        <footer id="footer" aria-label="Contact and legal">
+          <p>
+            Contact us:{" "}
+            <a href="mailto:leffleryd@gmail.com">leffleryd@gmail.com</a>
+          </p>
+          <p>&copy; {new Date().getFullYear()} Leffler International Investments Pty Ltd | Independent Herbalife Member</p>
         </footer>
       </div>
     </>
