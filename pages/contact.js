@@ -15,7 +15,7 @@ export default function ContactPage() {
   const memberRegistrationUrl =
     "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-AU&redirect=https://www.myherbalife.com/en-AU/";
 
-  const siteUrl = "https://www.nutripreferred.com";
+  const siteUrl = "https://www.no1proteinforglp1.com";
   const pageUrl = `${siteUrl}/contact`;
   const pageTitle = "Contact Us | NutriPreferred – Herbalife with Jaffa & Dan";
   const pageDescription =
@@ -165,6 +165,24 @@ export default function ContactPage() {
             </p>
           </section>
 
+          {/* MEET OUR TEAM */}
+          <section className="section meet-team-section" aria-label="Meet our educators team">
+            <h2 className="meet-team-title">Meet Our Wellness Educators</h2>
+            <p className="meet-team-text">
+              Get to know Jaffa & Dan and discover how we help people transform their health through
+              personalised nutrition coaching, wellness education, and community support.
+            </p>
+            <a
+              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="meet-team-btn"
+              aria-label="Watch our wellness educators team on YouTube"
+            >
+              Meet Our Educators Team
+            </a>
+          </section>
+
           {/* CONTACT FORM */}
           <section className="contact-form-section">
             <form className="contact-form" onSubmit={handleSubmit}>
@@ -303,15 +321,6 @@ export default function ContactPage() {
             Contact us:{" "}
             <a href="mailto:leffleryd@gmail.com">leffleryd@gmail.com</a>
           </p>
-          <div className="footer-social">
-            <a
-              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              YouTube
-            </a>
-          </div>
           <p>&copy; {new Date().getFullYear()} Leffler International Investments Pty Ltd | Independent Herbalife Member</p>
         </footer>
       </div>

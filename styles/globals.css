@@ -89,10 +89,6 @@ main {
   background: rgba(255, 255, 255, 0.95);
 }
 
-.header-logo-block {
-  display: none !important;
-}
-
 .top-left-logo img {
   width: 160px;
   height: 80px;
@@ -149,10 +145,6 @@ main {
   margin: 0 -1.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.hero-logo-image {
-  display: none !important;
 }
 
 .hero-title {

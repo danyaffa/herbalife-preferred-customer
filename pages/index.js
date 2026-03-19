@@ -2,7 +2,7 @@
 import Head from "next/head";
 
 export default function HomePage() {
-  const siteUrl = "https://www.nutripreferred.com";
+  const siteUrl = "https://www.no1proteinforglp1.com";
   const siteName = "NutriPreferred – Herbalife with Jaffa & Dan";
   const siteTitle = "Herbalife Preferred Customer & Independent Distributor | NutriPreferred";
   const siteDescription =
@@ -85,7 +85,7 @@ export default function HomePage() {
           </a>
 
           <nav className="site-nav" aria-label="Main navigation">
-            <a href="#top">Home</a>
+            <a href="/">Home</a>
             <a
               href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
               target="_blank"

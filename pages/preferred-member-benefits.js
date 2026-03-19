@@ -2,10 +2,7 @@
 import Head from "next/head";
 
 export default function PreferredMemberBenefitsPage() {
-  const herbalifeRegistrationUrl =
-    "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/";
-
-  const siteUrl = "https://www.nutripreferred.com";
+  const siteUrl = "https://www.no1proteinforglp1.com";
   const pageUrl = `${siteUrl}/preferred-member-benefits`;
   const pageTitle = "Benefits of Being a Herbalife Preferred Member | NutriPreferred";
   const pageDescription =
@@ -102,6 +99,7 @@ export default function PreferredMemberBenefitsPage() {
             >
               Blog
             </a>
+            <a href="/preferred-member-benefits">Benefits</a>
             <a href="/#who-we-are">About</a>
             <a href="/contact">Contact</a>
           </nav>
@@ -184,6 +182,24 @@ export default function PreferredMemberBenefitsPage() {
             </div>
           </section>
 
+          {/* MEET OUR TEAM */}
+          <section className="section meet-team-section" aria-label="Meet our educators team">
+            <h2 className="meet-team-title">Meet Our Wellness Educators</h2>
+            <p className="meet-team-text">
+              Get to know Jaffa & Dan and discover how we help people transform their health through
+              personalised nutrition coaching, wellness education, and community support.
+            </p>
+            <a
+              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="meet-team-btn"
+              aria-label="Watch our wellness educators team on YouTube"
+            >
+              Meet Our Educators Team
+            </a>
+          </section>
+
           {/* CTA */}
           <section className="benefits-cta-section">
             <h2>Ready to Experience These Benefits?</h2>
@@ -207,15 +223,6 @@ export default function PreferredMemberBenefitsPage() {
             Contact us:{" "}
             <a href="mailto:leffleryd@gmail.com">leffleryd@gmail.com</a>
           </p>
-          <div className="footer-social">
-            <a
-              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              YouTube
-            </a>
-          </div>
           <p>&copy; {new Date().getFullYear()} Leffler International Investments Pty Ltd | Independent Herbalife Member</p>
         </footer>
       </div>

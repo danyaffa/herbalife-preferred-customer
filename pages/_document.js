@@ -2,7 +2,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
-  const siteUrl = "https://www.nutripreferred.com";
+  const siteUrl = "https://www.no1proteinforglp1.com";
   const siteName = "NutriPreferred – Herbalife with Jaffa & Dan";
   const logoUrl = `${siteUrl}/images/logo.png`;
 
