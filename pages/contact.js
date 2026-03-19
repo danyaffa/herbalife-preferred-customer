@@ -243,13 +243,13 @@ export default function ContactPage() {
               </p>
 
               <div className="popup-sponsor-details">
-                <h3>Sponsor Reference Details</h3>
+                <h3>Copy My Details</h3>
                 <ul className="sponsor-list">
                   <li>
                     <strong>Sponsor Name:</strong> Jaffa Leffler
                   </li>
                   <li>
-                    <strong>Reference ID:</strong> U20881856
+                    <strong>Sponsor ID:</strong> 05458162C
                   </li>
                   <li>
                     <strong>Last Name (3 letters):</strong> LEF
@@ -258,20 +258,41 @@ export default function ContactPage() {
                     <strong>Purchased Herbalife Member Pack from Sponsor?</strong> NO
                   </li>
                 </ul>
-                <p className="sponsor-note">
-                  Please note: the Reference ID shown above is for reference purposes only.
-                  Contact us to receive the correct sponsor details you will need to complete your registration.
-                </p>
               </div>
 
-              <a
-                href={getRegistrationUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="popup-signup-btn"
-              >
-                Sign Up Now
-              </a>
+              <div className="popup-buttons">
+                <button
+                  type="button"
+                  className="popup-download-btn"
+                  onClick={() => {
+                    const text =
+                      "Sponsor Details for Herbalife Registration\n" +
+                      "==========================================\n\n" +
+                      "Sponsor Name: Jaffa Leffler\n" +
+                      "Sponsor ID: 05458162C\n" +
+                      "Last Name (3 letters): LEF\n" +
+                      "Purchased Herbalife Member Pack from Sponsor? NO\n";
+                    const blob = new Blob([text], { type: "text/plain" });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement("a");
+                    a.href = url;
+                    a.download = "sponsor-details.txt";
+                    a.click();
+                    URL.revokeObjectURL(url);
+                  }}
+                >
+                  Download These Details
+                </button>
+
+                <a
+                  href={getRegistrationUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="popup-signup-btn"
+                >
+                  Sign Up Now
+                </a>
+              </div>
             </div>
           </div>
         )}
