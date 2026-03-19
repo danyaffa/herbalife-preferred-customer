@@ -7,6 +7,8 @@ export default function ContactPage() {
   const router = useRouter();
   const [showPopup, setShowPopup] = useState(false);
   const [registrationType, setRegistrationType] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const preferredRegistrationUrl =
     "https://accounts.myherbalife.com/Account/Create?appId=1&qrFlow=1&locale=en-US&SponsorId=sx4pw1BxvAWOTs1Yu1fm1A==&cmp=m_it_it_wbs_dssignup_btn_nap_copylink_20250305";
@@ -25,10 +27,40 @@ export default function ContactPage() {
     if (type === "preferred" || type === "member") {
       setRegistrationType(type);
     }
-    if (router.query.sent === "true") {
-      setShowPopup(true);
+  }, [router.query.type]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/leffleryd@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setShowPopup(true);
+        e.target.reset();
+      } else {
+        setSubmitError("Something went wrong. Please try again or email us directly.");
+      }
+    } catch {
+      setSubmitError("Network error. Please try again or email us directly at leffleryd@gmail.com");
+    } finally {
+      setIsSubmitting(false);
     }
-  }, [router.query.type, router.query.sent]);
+  };
 
   const getRegistrationUrl = () => {
     return registrationType === "member"
@@ -155,9 +187,8 @@ export default function ContactPage() {
 
           {/* CONTACT FORM */}
           <section className="contact-form-section">
-            <form className="contact-form" action="https://formsubmit.co/410640ea7c4babd936bb1ebebecbb610" method="POST">
+            <form className="contact-form" onSubmit={handleSubmit}>
               <input type="hidden" name="_subject" value={registrationType === "member" ? "New Member Registration Enquiry – NutriPreferred" : "New Preferred Customer Enquiry – NutriPreferred"} />
-              <input type="hidden" name="_next" value="https://www.no1proteinforglp1.com/contact?sent=true" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="type" value={registrationType === "member" ? "Independent Herbalife Member" : "Preferred Customer"} />
               <input type="text" name="_honey" style={{display: "none"}} />
@@ -209,8 +240,12 @@ export default function ContactPage() {
                 />
               </div>
 
-              <button type="submit" className="contact-submit-btn">
-                SEND
+              {submitError && (
+                <p className="form-error">{submitError}</p>
+              )}
+
+              <button type="submit" className="contact-submit-btn" disabled={isSubmitting}>
+                {isSubmitting ? "SENDING..." : "SEND"}
               </button>
             </form>
           </section>

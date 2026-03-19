@@ -887,6 +887,13 @@ footer p:last-child {
   transform: none;
 }
 
+.form-error {
+  color: #dc3545;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
 /* ---- Sponsor Details Popup ---- */
 .popup-overlay {
   position: fixed;
