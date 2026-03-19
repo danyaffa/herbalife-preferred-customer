@@ -50,20 +50,27 @@ export default function ContactPage() {
     setSending(true);
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://formsubmit.co/ajax/leffleryd@gmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          type: registrationType,
+          _subject: registrationType === "member"
+            ? "New Member Registration Enquiry – NutriPreferred"
+            : "New Preferred Customer Enquiry – NutriPreferred",
+          type: registrationType === "member" ? "Independent Herbalife Member" : "Preferred Customer",
         }),
       });
 
       if (res.ok) {
         setSending(false);
         setShowPopup(true);
+        setFormData({ name: "", email: "", message: "" });
       } else {
         setSending(false);
         alert("Failed to send message. Please try again or email us directly at leffleryd@gmail.com");
