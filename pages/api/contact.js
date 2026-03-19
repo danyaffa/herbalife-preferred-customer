@@ -11,6 +11,11 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Name, email, and message are required" });
   }
 
+  if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+    console.error("Missing GMAIL_USER or GMAIL_APP_PASSWORD environment variables");
+    return res.status(500).json({ error: "Email service not configured" });
+  }
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
