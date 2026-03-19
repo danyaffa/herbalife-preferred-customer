@@ -2,6 +2,7 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /_next/
 
 # Google
 User-agent: Googlebot
@@ -16,6 +17,9 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
 # Bing / Microsoft
 User-agent: Bingbot
 Allow: /
@@ -23,11 +27,37 @@ Allow: /
 User-agent: msnbot
 Allow: /
 
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 # AI search assistants and LLM crawlers
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: anthropic-ai
@@ -39,6 +69,12 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
 User-agent: Amazonbot
 Allow: /
 
@@ -46,9 +82,6 @@ User-agent: Bytespider
 Allow: /
 
 User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot-Extended
 Allow: /
 
 User-agent: cohere-ai
@@ -72,8 +105,26 @@ Allow: /
 User-agent: Phind
 Allow: /
 
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: MistralBot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Kangaroo Bot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
 # Social media crawlers
 User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
 Allow: /
 
 User-agent: Twitterbot
@@ -85,10 +136,16 @@ Allow: /
 User-agent: Pinterest
 Allow: /
 
+User-agent: Pinterestbot
+Allow: /
+
 User-agent: WhatsApp
 Allow: /
 
 User-agent: Slackbot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
 Allow: /
 
 User-agent: TelegramBot
@@ -100,4 +157,26 @@ Allow: /
 User-agent: Snapchat
 Allow: /
 
+User-agent: redditbot
+Allow: /
+
+User-agent: Embedly
+Allow: /
+
+User-agent: Quora-Bot
+Allow: /
+
+User-agent: outbrain
+Allow: /
+
+User-agent: Taboola
+Allow: /
+
+# Crawl-delay for polite crawling
+User-agent: *
+Crawl-delay: 1
+
 Sitemap: https://www.nutripreferred.com/sitemap.xml
+
+# Host directive
+Host: https://www.nutripreferred.com

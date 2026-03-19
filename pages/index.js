@@ -261,14 +261,34 @@ export default function HomePage() {
             </div>
           </section>
 
+          {/* MEET OUR TEAM */}
+          <section className="section meet-team-section" aria-label="Meet our educators team">
+            <h2 className="meet-team-title">Meet Our Wellness Educators</h2>
+            <p className="meet-team-text">
+              Get to know Jaffa & Dan and discover how we help people transform their health through
+              personalised nutrition coaching, wellness education, and community support.
+            </p>
+            <a
+              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="meet-team-btn"
+              aria-label="Watch our wellness educators team on YouTube"
+            >
+              Meet Our Educators Team
+            </a>
+          </section>
+
           {/* WHO WE ARE */}
           <section className="section who-section" id="who-we-are" aria-label="About us">
             <h2 className="who-title">Who We Are</h2>
 
             <p className="who-text">
-              We are Jaffa & Dan Leffler — Independent Herbalife Members passionate about helping people achieve their
-              health, energy, and lifestyle goals. Whether you want to improve your wellness with world-class nutrition
-              or build a rewarding home-based business, we are here to guide and support you every step of the way.
+              We are Jaffa & Dan Leffler — Independent Herbalife Members since 1993, Senior Executive Presidents 15K,
+              passionate about helping people achieve their health, energy, and lifestyle goals.
+              Whether you want to improve your wellness with world-class nutrition, add the #1 Protein Shakes
+              in the world as support for your GLP-1 injections, or build a rewarding home-based business,
+              we are here to guide and support you every step of the way.
             </p>
 
             <span className="who-badge">
@@ -298,17 +318,6 @@ export default function HomePage() {
               leffleryd@gmail.com
             </a>
           </p>
-
-          <div className="footer-social">
-            <a
-              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Watch our YouTube channel"
-            >
-              YouTube
-            </a>
-          </div>
 
           <p>&copy; {new Date().getFullYear()} Leffler International Investments Pty Ltd | Independent Herbalife Member</p>
         </footer>

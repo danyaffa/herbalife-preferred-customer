@@ -1,0 +1,20 @@
+{
+  "name": "NutriPreferred – Herbalife with Jaffa & Dan",
+  "short_name": "NutriPreferred",
+  "description": "Herbalife Preferred Customer & Independent Distributor sign-up. Save 25% on nutrition products with personalised wellness support from Jaffa & Dan Leffler.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf7",
+  "theme_color": "#1a6b4a",
+  "orientation": "portrait-primary",
+  "categories": ["health", "wellness", "nutrition", "fitness"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "200x100",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
