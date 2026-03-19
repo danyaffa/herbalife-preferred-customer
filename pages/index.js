@@ -6,92 +6,203 @@ export default function HomePage() {
     "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/";
 
   const siteUrl = "https://www.nutripreferred.com";
+  const siteName = "NutriPreferred – Herbalife with Jaffa & Dan";
+  const siteTitle = "Herbalife Preferred Customer & Independent Distributor | NutriPreferred";
+  const siteDescription =
+    "Sign up as a Herbalife Preferred Customer for exclusive 25% product discounts, or become an Independent Distributor. Join Jaffa & Dan Leffler for personalised wellness support, free shake recipes, and a proven path to health and business success.";
+  const ogImage = `${siteUrl}/images/logo.png`;
 
   return (
     <>
       <Head>
-        <title>Herbalife Preferred Customer & Independent Member – Jaffa & Dan</title>
-        <meta
-          name="description"
-          content="Sign up as a Herbalife Preferred Customer for exclusive product discounts up to 25% off, or become an Independent Distributor. Join Jaffa & Dan Leffler for wellness support, free shake recipes, and a proven path to health and business success."
-        />
+        <title>{siteTitle}</title>
+        <meta name="description" content={siteDescription} />
         <meta
           name="keywords"
-          content="Herbalife preferred customer, Herbalife sign up, Herbalife distributor, Herbalife membership, Herbalife discounts, Herbalife shake recipes, join Herbalife, Herbalife business opportunity, Herbalife wellness, Herbalife independent member, Herbalife products discount, Herbalife VIP customer, nutrition club, weight management"
+          content="Herbalife preferred customer, Herbalife sign up, Herbalife distributor, Herbalife membership, Herbalife discount 25%, Herbalife shake recipes, join Herbalife, Herbalife business opportunity, Herbalife wellness, Herbalife independent member, Herbalife products discount, Herbalife VIP customer, nutrition club, weight management, Herbalife Australia, Herbalife sponsor, Herbalife nutrition, healthy shakes, meal replacement, wellness coaching, Herbalife online sign up, best Herbalife sponsor"
         />
         <link rel="canonical" href={siteUrl} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Open Graph / Facebook */}
+        {/* Open Graph / Facebook / LinkedIn / WhatsApp */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
-        <meta property="og:title" content="Herbalife Preferred Customer & Independent Member – Jaffa & Dan" />
-        <meta property="og:description" content="Sign up as a Herbalife Preferred Customer for exclusive product discounts, or become an Independent Distributor. Free shake recipes, wellness support, and business opportunities." />
-        <meta property="og:image" content={`${siteUrl}/images/logo.png`} />
-        <meta property="og:site_name" content="NutriPreferred – Herbalife with Jaffa & Dan" />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={siteDescription} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="NutriPreferred – Herbalife Preferred Customer & Distributor Sign Up" />
+        <meta property="og:site_name" content={siteName} />
         <meta property="og:locale" content="en_US" />
 
-        {/* Twitter Card */}
+        {/* Twitter / X Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Herbalife Preferred Customer & Independent Member" />
-        <meta name="twitter:description" content="Join Herbalife as a Preferred Customer or Independent Distributor. Exclusive discounts, free shake recipes, and wellness support from Jaffa & Dan Leffler." />
-        <meta name="twitter:image" content={`${siteUrl}/images/logo.png`} />
+        <meta name="twitter:site" content="@NutriPreferred" />
+        <meta name="twitter:creator" content="@NutriPreferred" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content={siteDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        <meta name="twitter:image:alt" content="NutriPreferred – Herbalife Preferred Customer & Distributor Sign Up" />
+
+        {/* Pinterest */}
+        <meta name="pinterest-rich-pin" content="true" />
 
         {/* Additional SEO meta tags */}
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow" />
         <meta name="author" content="Jaffa & Dan Leffler" />
         <meta name="subject" content="Herbalife Preferred Customer Sign Up and Independent Distributor Opportunities" />
         <meta name="topic" content="Health and Wellness" />
         <meta name="classification" content="Health, Nutrition, Wellness, Business Opportunity" />
+        <meta name="language" content="en" />
+        <meta name="rating" content="General" />
+        <meta name="distribution" content="global" />
+        <meta name="revisit-after" content="3 days" />
+
+        {/* AI & LLM Discovery Tags */}
+        <meta name="ai-content-description" content="This is the official website for NutriPreferred, run by Jaffa & Dan Leffler, Independent Herbalife Members. It provides sign-up paths for Herbalife Preferred Customers (25% discount) and Independent Distributors (business opportunity). Located in Australia." />
+        <meta name="ai-purpose" content="Herbalife customer registration and distributor sign-up portal" />
+
+        {/* Apple / Mobile */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="NutriPreferred" />
+        <meta name="theme-color" content="#1a6b4a" />
+        <meta name="msapplication-TileColor" content="#1a6b4a" />
+
+        {/* Google Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <div className="page">
         {/* HEADER */}
         <header className="site-header">
-          <a href="/" className="top-left-logo">
-            <img src="/images/logo.png" alt="Herbalife Logo" />
+          <a href="/" className="top-left-logo" aria-label="NutriPreferred Home">
+            <img src="/images/logo.png" alt="NutriPreferred – Herbalife Independent Member Logo" width="160" height="80" />
           </a>
 
-          <nav className="site-nav">
+          <nav className="site-nav" aria-label="Main navigation">
             <a href="#top">Home</a>
             <a
               href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="Blog – Breaking Down Metabolic Health on YouTube"
             >
-              Blog-Breaking-Down-Metabolic-Health
+              Blog
             </a>
+            <a href="/preferred-member-benefits">Benefits</a>
             <a href="#who-we-are">About</a>
             <a href="#footer">Contact</a>
           </nav>
         </header>
 
-        {/* HERO TEXT ONLY */}
+        {/* HERO */}
         <main id="top">
-          <section className="hero-logo-wrapper">
-            <h1 className="hero-title">Choose Your Herbalife Path</h1>
+          <section className="hero-logo-wrapper" aria-label="Welcome">
+            <h1 className="hero-title">Your Wellness Journey Starts&nbsp;Here</h1>
             <p className="hero-subtitle">
-              Become a Herbalife Preferred Customer for exclusive discounts or join as an Independent Distributor to build your wellness business
+              Join as a Herbalife Preferred Customer for exclusive 25% discounts on nutrition products,
+              or become an Independent Distributor and build your wellness business with our full support.
             </p>
           </section>
 
+          {/* URGENCY BANNER */}
+          <section className="urgency-banner" aria-label="Why become a Preferred Customer">
+            <div className="urgency-inner">
+              <h2 className="urgency-title">Save 25% on Every Order — Become a Preferred Customer Today</h2>
+              <p className="urgency-text">
+                Buy directly from Herbalife at exclusive discount prices. No selling required. No obligations.
+                Just savings on shakes, supplements, and wellness products — delivered straight to you.
+              </p>
+              <div className="urgency-benefits">
+                <div className="urgency-benefit">
+                  <strong>Exclusive Discounts</strong>
+                  <span>Up to 25% off all products — savings grow over time</span>
+                </div>
+                <div className="urgency-benefit">
+                  <strong>Buy Direct</strong>
+                  <span>Order straight from Herbalife, no middlemen</span>
+                </div>
+                <div className="urgency-benefit">
+                  <strong>Free Wellness Support</strong>
+                  <span>Personalised guidance to optimise your health journey</span>
+                </div>
+                <div className="urgency-benefit">
+                  <strong>Zero Obligations</strong>
+                  <span>No selling, no recruiting — just enjoy the products you love</span>
+                </div>
+              </div>
+              <p className="urgency-switch">
+                Want more? Preferred Customers can upgrade to Distributor status anytime to start earning.
+              </p>
+              <a
+                href={herbalifeRegistrationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="urgency-cta"
+                aria-label="Start saving now as a Preferred Customer"
+              >
+                Start Saving Now — Sign Up Free
+              </a>
+            </div>
+          </section>
+
+          {/* TRUST INDICATORS */}
+          <section className="trust-banner" aria-label="Key highlights">
+            <div className="trust-item">
+              <span className="trust-number">25%</span>
+              <span className="trust-label">Product Savings</span>
+            </div>
+            <div className="trust-item">
+              <span className="trust-number">#1</span>
+              <span className="trust-label">Global Nutrition Brand</span>
+            </div>
+            <div className="trust-item">
+              <span className="trust-number">Free</span>
+              <span className="trust-label">Coaching & Recipes</span>
+            </div>
+            <div className="trust-item">
+              <span className="trust-number">24/7</span>
+              <span className="trust-label">Wellness Support</span>
+            </div>
+          </section>
+
           {/* PREFERRED CUSTOMER */}
-          <section className="section path-section">
+          <section className="section path-section" aria-label="Preferred Customer signup">
             <div className="path-block">
               <div className="path-image-wrapper">
-                <img src="/images/couple.jpg" className="path-image" alt="Happy couple enjoying Herbalife products as Preferred Customers" />
+                <img
+                  src="/images/couple.jpg"
+                  className="path-image"
+                  alt="Happy couple enjoying Herbalife products as Preferred Customers"
+                  width="220"
+                  height="220"
+                  loading="lazy"
+                />
               </div>
 
               <h2 className="path-heading">Preferred Customer</h2>
 
               <p className="path-text">
-                Enjoy exclusive savings of up to 25% on Herbalife nutrition products with personalized wellness support. As a Preferred Customer, you get discount pricing on shakes, supplements, and weight management products.
+                Enjoy exclusive savings of up to 25% on Herbalife nutrition products with personalised wellness support.
+                As a Preferred Customer, you get discount pricing on shakes, teas, supplements, and weight management products
+                — plus ongoing guidance from your dedicated sponsor.
               </p>
 
               <div className="button-row">
                 <a
                   href={herbalifeRegistrationUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="button"
+                  aria-label="Sign up as a Herbalife Preferred Customer"
                 >
                   Sign Up as Preferred Customer
                 </a>
@@ -99,12 +210,14 @@ export default function HomePage() {
                 <a
                   href="https://youtu.be/d_mjG_QdK9I"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="button-outline"
+                  aria-label="Watch Preferred Customer information video"
                 >
                   Watch Video
                 </a>
 
-                <a href="/ShakeRecipeBrochure.pdf" className="button-outline" download>
+                <a href="/ShakeRecipeBrochure.pdf" className="button-outline" download aria-label="Download free shake recipes PDF">
                   Download Free Shake Recipes
                 </a>
               </div>
@@ -112,29 +225,44 @@ export default function HomePage() {
           </section>
 
           {/* INDEPENDENT DISTRIBUTOR */}
-          <section className="section path-section">
+          <section className="section path-section" aria-label="Independent Distributor signup">
             <div className="path-block">
               <div className="path-image-wrapper">
-                <img src="/images/woman.jpg" className="path-image" alt="Independent Herbalife Distributor building a wellness business" />
+                <img
+                  src="/images/woman.jpg"
+                  className="path-image"
+                  alt="Independent Herbalife Distributor building a wellness business from home"
+                  width="220"
+                  height="220"
+                  loading="lazy"
+                />
               </div>
 
               <h2 className="path-heading">Independent Herbalife Distributor</h2>
 
-              <p className="path-text">Start your own Herbalife business from home with full training and mentorship. Earn income while helping others achieve their health and wellness goals as an Independent Distributor.</p>
+              <p className="path-text">
+                Start your own Herbalife business from home with full training and mentorship.
+                Earn income while helping others achieve their health and wellness goals.
+                We provide the tools, coaching, and community you need to succeed.
+              </p>
 
               <div className="button-row">
                 <a
                   href={herbalifeRegistrationUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="button"
+                  aria-label="Sign up as an Independent Herbalife Distributor"
                 >
-                  Sign Up as Independent Herbalife Distributor
+                  Sign Up as Independent Distributor
                 </a>
 
                 <a
                   href="https://youtu.be/tAu3O8fkOIo"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="button-outline"
+                  aria-label="Watch Distributor opportunity video"
                 >
                   Watch Video
                 </a>
@@ -143,48 +271,66 @@ export default function HomePage() {
           </section>
 
           {/* HOW IT WORKS */}
-          <section className="section">
+          <section className="section" aria-label="How it works">
             <div className="how-it-works">
-              <h3>How it works</h3>
+              <h3>How It Works</h3>
               <ol>
-                <li>Choose Preferred Customer or Independent Distributor.</li>
-                <li>Click Sign Up to open the Herbalife registration form.</li>
+                <li>Choose your path — Preferred Customer or Independent Distributor.</li>
+                <li>Click <strong>Sign Up</strong> to open the official Herbalife registration form.</li>
                 <li>
-                  Sponsor details: Jaffa Leffler – ID 05458162C – LEF – HMP Purchased:
-                  NO.
+                  Enter your sponsor details: <strong>Jaffa Leffler</strong> — ID <strong>05458162C</strong> — <strong>LEF</strong> — HMP Purchased: <strong>NO</strong>.
                 </li>
-                <li>Email us after registration.</li>
+                <li>Send us a quick email after registration so we can welcome you and get started!</li>
               </ol>
             </div>
           </section>
 
           {/* WHO WE ARE */}
-          <section className="section who-section" id="who-we-are">
-            <h2 className="who-title">Who we are</h2>
+          <section className="section who-section" id="who-we-are" aria-label="About us">
+            <h2 className="who-title">Who We Are</h2>
 
             <p className="who-text">
-              We are Jaffa & Dan Leffler, Independent Herbalife Members helping people achieve their health, energy, and lifestyle goals through Herbalife nutrition products and business opportunities. Whether you want to improve your wellness or build a home-based business, we provide the guidance and support you need.
+              We are Jaffa & Dan Leffler — Independent Herbalife Members passionate about helping people achieve their
+              health, energy, and lifestyle goals. Whether you want to improve your wellness with world-class nutrition
+              or build a rewarding home-based business, we are here to guide and support you every step of the way.
             </p>
 
             <span className="who-badge">
-              Herbalife is #1 in four major health & wellness categories
+              Herbalife — #1 in Four Major Health & Wellness Categories
             </span>
           </section>
 
-          {/* SHAKE RECIPES */}
-          <section className="section" style={{ marginTop: "3rem" }}>
+          {/* SHAKE RECIPES CTA */}
+          <section className="section recipes-cta" aria-label="Free shake recipes">
             <p>Want Healthy Ideas?</p>
-            <p>Download free shake recipes.</p>
-            <a href="/ShakeRecipeBrochure.pdf" className="shake-button" download>
+            <p>Download our free shake recipe guide — delicious, nutritious, and easy to make.</p>
+            <a href="/ShakeRecipeBrochure.pdf" className="shake-button" download aria-label="Download free shake recipe brochure">
               Free Shake Recipes
             </a>
           </section>
         </main>
 
         {/* FOOTER */}
-        <footer id="footer">
-          <p>Contact: <a href="mailto:leffleryd@gmail.com">leffleryd@gmail.com</a></p>
-          <p>© 2025 Leffler International Investments Pty Ltd. | Independent Herbalife Member</p>
+        <footer id="footer" aria-label="Contact and legal">
+          <p>
+            Contact us:{" "}
+            <a href="mailto:leffleryd@gmail.com" aria-label="Email Jaffa and Dan Leffler">
+              leffleryd@gmail.com
+            </a>
+          </p>
+
+          <div className="footer-social">
+            <a
+              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch our YouTube channel"
+            >
+              YouTube
+            </a>
+          </div>
+
+          <p>&copy; {new Date().getFullYear()} Leffler International Investments Pty Ltd | Independent Herbalife Member</p>
         </footer>
       </div>
     </>
