@@ -100,6 +100,7 @@ export default function PreferredMemberBenefitsPage() {
               Blog
             </a>
             <a href="/preferred-member-benefits">Benefits</a>
+            <a href="/recipes">Recipes</a>
             <a href="/#who-we-are">About</a>
             <a href="/contact">Contact</a>
           </nav>
