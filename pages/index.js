@@ -143,11 +143,9 @@ export default function HomePage() {
                 Want more? Preferred Customers can upgrade to Distributor status anytime to start earning.
               </p>
               <a
-                href={herbalifeRegistrationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/instructions"
                 className="urgency-cta"
-                aria-label="Start saving now as a Preferred Customer"
+                aria-label="Start saving now as a Preferred Customer — step-by-step instructions"
               >
                 Start Saving Now — Sign Up Free
               </a>
@@ -198,11 +196,9 @@ export default function HomePage() {
 
               <div className="button-row">
                 <a
-                  href={herbalifeRegistrationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/instructions"
                   className="button"
-                  aria-label="Sign up as a Herbalife Preferred Customer"
+                  aria-label="Sign up as a Herbalife Preferred Customer — step-by-step instructions"
                 >
                   Sign Up as Preferred Customer
                 </a>
