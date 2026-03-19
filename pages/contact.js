@@ -15,7 +15,7 @@ export default function ContactPage() {
   const memberRegistrationUrl =
     "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-AU&redirect=https://www.myherbalife.com/en-AU/";
 
-  const siteUrl = "https://www.nutripreferred.com";
+  const siteUrl = "https://www.no1proteinforglp1.com";
   const pageUrl = `${siteUrl}/contact`;
   const pageTitle = "Contact Us | NutriPreferred – Herbalife with Jaffa & Dan";
   const pageDescription =

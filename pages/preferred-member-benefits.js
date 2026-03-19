@@ -2,10 +2,7 @@
 import Head from "next/head";
 
 export default function PreferredMemberBenefitsPage() {
-  const herbalifeRegistrationUrl =
-    "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-US&redirect=https://www.myherbalife.com/en-US/";
-
-  const siteUrl = "https://www.nutripreferred.com";
+  const siteUrl = "https://www.no1proteinforglp1.com";
   const pageUrl = `${siteUrl}/preferred-member-benefits`;
   const pageTitle = "Benefits of Being a Herbalife Preferred Member | NutriPreferred";
   const pageDescription =
@@ -102,6 +99,7 @@ export default function PreferredMemberBenefitsPage() {
             >
               Blog
             </a>
+            <a href="/preferred-member-benefits">Benefits</a>
             <a href="/#who-we-are">About</a>
             <a href="/contact">Contact</a>
           </nav>

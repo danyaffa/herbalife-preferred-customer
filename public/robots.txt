@@ -176,7 +176,7 @@ Allow: /
 User-agent: *
 Crawl-delay: 1
 
-Sitemap: https://www.nutripreferred.com/sitemap.xml
+Sitemap: https://www.no1proteinforglp1.com/sitemap.xml
 
 # Host directive
-Host: https://www.nutripreferred.com
+Host: https://www.no1proteinforglp1.com
