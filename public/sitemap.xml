@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.nutripreferred.com/</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.nutripreferred.com/images/logo.png</image:loc>
+      <image:title>NutriPreferred – Herbalife Independent Member Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nutripreferred.com/images/couple.jpg</image:loc>
+      <image:title>Herbalife Preferred Customer – Happy Couple</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nutripreferred.com/images/woman.jpg</image:loc>
+      <image:title>Independent Herbalife Distributor</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nutripreferred.com/preferred-member-benefits</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.nutripreferred.com/Preferred-Customer.pdf</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.nutripreferred.com/herbalife-membership.pdf</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.nutripreferred.com/ShakeRecipeBrochure.pdf</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
