@@ -103,7 +103,7 @@ export default function PreferredMemberBenefitsPage() {
               Blog
             </a>
             <a href="/#who-we-are">About</a>
-            <a href="/#footer">Contact</a>
+            <a href="/contact">Contact</a>
           </nav>
         </header>
 
@@ -192,13 +192,11 @@ export default function PreferredMemberBenefitsPage() {
               community engagement, and rewarding incentives, all designed to help you reach your health goals.
             </p>
             <a
-              href={herbalifeRegistrationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact?type=preferred"
               className="button"
-              aria-label="Sign up as Herbalife Preferred Member"
+              aria-label="Register to become a Herbalife Preferred Member"
             >
-              Become a Preferred Member Today
+              Register to Become a Preferred Member
             </a>
           </section>
         </main>

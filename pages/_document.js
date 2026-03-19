@@ -102,7 +102,7 @@ export default function Document() {
         name: "How do I sign up as a Herbalife Preferred Customer?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Visit nutripreferred.com, choose the Preferred Customer path, and click Sign Up. You'll be directed to the official Herbalife registration form. Use sponsor Jaffa Leffler, ID 05458162C, last three letters LEF."
+          text: "Visit nutripreferred.com, choose the Preferred Customer path, and click Register. You'll be directed to our contact form. After submitting your details, you'll receive the sponsor information needed to complete your Herbalife registration."
         }
       },
       {
@@ -118,7 +118,7 @@ export default function Document() {
         name: "How do I become an Independent Herbalife Distributor?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Visit nutripreferred.com, choose the Independent Distributor path, and click Sign Up. Complete the Herbalife registration with sponsor Jaffa Leffler, ID 05458162C. You'll receive full training, mentorship, and ongoing support to build your business."
+          text: "Visit nutripreferred.com, choose the Independent Distributor path, and click Register. Complete our contact form to receive sponsor details and full training, mentorship, and ongoing support to build your business."
         }
       },
       {
@@ -192,8 +192,8 @@ export default function Document() {
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Enter Sponsor Details",
-        text: "Enter sponsor details: Jaffa Leffler, ID 05458162C, LEF. HMP Purchased: NO."
+        name: "Contact Us",
+        text: "Submit the contact form with your details. After submitting, you will receive the sponsor information needed to complete your Herbalife registration."
       },
       {
         "@type": "HowToStep",
