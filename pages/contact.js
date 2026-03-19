@@ -34,7 +34,8 @@ export default function ContactPage() {
     setIsSubmitting(true);
     setSubmitError("");
 
-    const formData = new FormData(e.target);
+    const form = e.target;
+    const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
     try {
@@ -46,11 +47,9 @@ export default function ContactPage() {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
-
-      if (response.ok && result.success) {
+      if (response.ok) {
         setShowPopup(true);
-        e.target.reset();
+        form.reset();
       } else {
         setSubmitError("Something went wrong. Please try again or email us directly.");
       }
