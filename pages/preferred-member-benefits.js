@@ -183,6 +183,15 @@ export default function PreferredMemberBenefitsPage() {
               Get to know Jaffa & Dan and discover how we help people transform their health through
               personalised nutrition coaching, wellness education, and community support.
             </p>
+            <a
+              href="https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="meet-team-btn"
+              aria-label="Meet our wellness educators on YouTube"
+            >
+              Meet Our Wellness Educators
+            </a>
           </section>
 
           {/* CTA */}
