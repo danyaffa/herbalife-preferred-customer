@@ -45,25 +45,33 @@ export default function ContactPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);
 
-    // Compose email via mailto
-    const subject = registrationType === "member"
-      ? "New Member Registration Enquiry – NutriPreferred"
-      : "New Preferred Customer Enquiry – NutriPreferred";
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nType: ${getTypeLabel()}\n\nMessage:\n${formData.message}`;
-    const mailtoUrl = `mailto:leffleryd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          type: registrationType,
+        }),
+      });
 
-    // Open email client
-    window.open(mailtoUrl, "_blank");
-
-    // Show sponsor details popup after a short delay
-    setTimeout(() => {
+      if (res.ok) {
+        setSending(false);
+        setShowPopup(true);
+      } else {
+        setSending(false);
+        alert("Failed to send message. Please try again or email us directly at leffleryd@gmail.com");
+      }
+    } catch (err) {
       setSending(false);
-      setShowPopup(true);
-    }, 800);
+      alert("Failed to send message. Please try again or email us directly at leffleryd@gmail.com");
+    }
   };
 
   const closePopup = () => {
