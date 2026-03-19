@@ -5,9 +5,7 @@ import { useRouter } from "next/router";
 
 export default function ContactPage() {
   const router = useRouter();
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [showPopup, setShowPopup] = useState(false);
-  const [sending, setSending] = useState(false);
   const [registrationType, setRegistrationType] = useState("");
 
   const preferredRegistrationUrl =
@@ -27,7 +25,10 @@ export default function ContactPage() {
     if (type === "preferred" || type === "member") {
       setRegistrationType(type);
     }
-  }, [router.query.type]);
+    if (router.query.sent === "true") {
+      setShowPopup(true);
+    }
+  }, [router.query.type, router.query.sent]);
 
   const getRegistrationUrl = () => {
     return registrationType === "member"
@@ -39,46 +40,6 @@ export default function ContactPage() {
     return registrationType === "member"
       ? "Independent Herbalife Member"
       : "Preferred Customer";
-  };
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSending(true);
-
-    try {
-      const res = await fetch("https://formsubmit.co/ajax/410640ea7c4babd936bb1ebebecbb610", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          _subject: registrationType === "member"
-            ? "New Member Registration Enquiry – NutriPreferred"
-            : "New Preferred Customer Enquiry – NutriPreferred",
-          type: registrationType === "member" ? "Independent Herbalife Member" : "Preferred Customer",
-        }),
-      });
-
-      if (res.ok) {
-        setSending(false);
-        setShowPopup(true);
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setSending(false);
-        alert("Failed to send message. Please try again or email us directly at leffleryd@gmail.com");
-      }
-    } catch (err) {
-      setSending(false);
-      alert("Failed to send message. Please try again or email us directly at leffleryd@gmail.com");
-    }
   };
 
   const closePopup = () => {
@@ -194,7 +155,13 @@ export default function ContactPage() {
 
           {/* CONTACT FORM */}
           <section className="contact-form-section">
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form className="contact-form" action="https://formsubmit.co/410640ea7c4babd936bb1ebebecbb610" method="POST">
+              <input type="hidden" name="_subject" value={registrationType === "member" ? "New Member Registration Enquiry – NutriPreferred" : "New Preferred Customer Enquiry – NutriPreferred"} />
+              <input type="hidden" name="_next" value="https://www.no1proteinforglp1.com/contact?sent=true" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="type" value={registrationType === "member" ? "Independent Herbalife Member" : "Preferred Customer"} />
+              <input type="text" name="_honey" style={{display: "none"}} />
+
               {registrationType && (
                 <div className="form-type-badge">
                   Registering as: <strong>{getTypeLabel()}</strong>
@@ -207,8 +174,6 @@ export default function ContactPage() {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                   placeholder="Your full name"
                   autoComplete="name"
@@ -221,8 +186,6 @@ export default function ContactPage() {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   placeholder="your@email.com"
                   autoComplete="email"
@@ -234,8 +197,6 @@ export default function ContactPage() {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   placeholder={
                     registrationType === "preferred"
@@ -248,8 +209,8 @@ export default function ContactPage() {
                 />
               </div>
 
-              <button type="submit" className="contact-submit-btn" disabled={sending}>
-                {sending ? "Sending..." : "SEND"}
+              <button type="submit" className="contact-submit-btn">
+                SEND
               </button>
             </form>
           </section>
