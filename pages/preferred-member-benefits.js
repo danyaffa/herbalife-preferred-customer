@@ -92,13 +92,6 @@ export default function PreferredMemberBenefitsPage() {
 
           <nav className="site-nav" aria-label="Main navigation">
             <a href="/">Home</a>
-            <a
-              href="https://www.loseweighttoday.com.au/blog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Blog
-            </a>
             <a href="/preferred-member-benefits">Benefits</a>
             <a href="/recipes">Recipes</a>
             <a href="/#who-we-are">About</a>
@@ -190,15 +183,6 @@ export default function PreferredMemberBenefitsPage() {
               Get to know Jaffa & Dan and discover how we help people transform their health through
               personalised nutrition coaching, wellness education, and community support.
             </p>
-            <a
-              href="https://www.loseweighttoday.com.au/blog"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="meet-team-btn"
-              aria-label="Read our wellness blog"
-            >
-              Visit Our Blog
-            </a>
           </section>
 
           {/* CTA */}
